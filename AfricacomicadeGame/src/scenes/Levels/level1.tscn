@@ -1,14 +1,1187 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/Tilesets/floorTileset.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/Pixel Adventure 1/Free/Background/Blue.png" type="Texture" id=2]
+[ext_resource path="res://src/scenes/Levels/backgroundVerticalMovement.gd" type="Script" id=3]
+[ext_resource path="res://src/Script/backgroundImages.gd" type="Script" id=4]
 
 [node name="level1" type="Node2D"]
 
 [node name="Background" type="CanvasLayer" parent="."]
 layer = -2
 
+[node name="Control" type="Control" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="0" type="HBoxContainer" parent="Background/Control"]
+margin_right = 1024.0
+margin_bottom = 64.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/0"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/0"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/0"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/0"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/0"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/0"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/0"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/0"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/0"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/0"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/0"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/0"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/0"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/0"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/0"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/0"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/0"]
+position = Vector2( 476, 72 )
+
+[node name="10" type="HBoxContainer" parent="Background/Control"]
+margin_top = -64.0
+margin_right = 1024.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/10"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/10"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/10"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/10"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/10"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/10"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/10"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/10"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/10"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/10"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/10"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/10"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/10"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/10"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/10"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/10"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/10"]
+position = Vector2( 476, 72 )
+
+[node name="1" type="HBoxContainer" parent="Background/Control"]
+margin_top = 64.0
+margin_right = 1024.0
+margin_bottom = 128.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/1"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/1"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/1"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/1"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/1"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/1"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/1"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/1"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/1"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/1"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/1"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/1"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/1"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/1"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/1"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/1"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/1"]
+position = Vector2( 476, 72 )
+
+[node name="2" type="HBoxContainer" parent="Background/Control"]
+margin_top = 128.0
+margin_right = 1024.0
+margin_bottom = 192.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/2"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/2"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/2"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/2"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/2"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/2"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/2"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/2"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/2"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/2"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/2"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/2"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/2"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/2"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/2"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/2"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/2"]
+position = Vector2( 476, 72 )
+
+[node name="3" type="HBoxContainer" parent="Background/Control"]
+margin_top = 192.0
+margin_right = 1024.0
+margin_bottom = 256.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/3"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/3"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/3"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/3"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/3"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/3"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/3"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/3"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/3"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/3"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/3"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/3"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/3"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/3"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/3"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/3"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/3"]
+position = Vector2( 476, 72 )
+
+[node name="4" type="HBoxContainer" parent="Background/Control"]
+margin_top = 256.0
+margin_right = 1024.0
+margin_bottom = 320.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/4"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/4"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/4"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/4"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/4"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/4"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/4"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/4"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/4"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/4"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/4"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/4"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/4"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/4"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/4"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/4"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/4"]
+position = Vector2( 476, 72 )
+
+[node name="5" type="HBoxContainer" parent="Background/Control"]
+margin_top = 320.0
+margin_right = 1024.0
+margin_bottom = 384.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/5"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/5"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/5"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/5"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/5"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/5"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/5"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/5"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/5"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/5"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/5"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/5"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/5"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/5"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/5"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/5"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/5"]
+position = Vector2( 476, 72 )
+
+[node name="6" type="HBoxContainer" parent="Background/Control"]
+margin_top = 384.0
+margin_right = 1024.0
+margin_bottom = 448.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/6"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/6"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/6"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/6"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/6"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/6"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/6"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/6"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/6"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/6"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/6"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/6"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/6"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/6"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/6"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/6"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/6"]
+position = Vector2( 476, 72 )
+
+[node name="7" type="HBoxContainer" parent="Background/Control"]
+margin_top = 448.0
+margin_right = 1024.0
+margin_bottom = 512.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/7"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/7"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/7"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/7"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/7"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/7"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/7"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/7"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/7"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/7"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/7"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/7"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/7"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/7"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/7"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/7"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/7"]
+position = Vector2( 476, 72 )
+
+[node name="8" type="HBoxContainer" parent="Background/Control"]
+margin_top = 512.0
+margin_right = 1024.0
+margin_bottom = 576.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/8"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/8"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/8"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/8"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/8"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/8"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/8"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/8"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/8"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/8"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/8"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/8"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/8"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/8"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/8"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/8"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/8"]
+position = Vector2( 476, 72 )
+
+[node name="9" type="HBoxContainer" parent="Background/Control"]
+margin_top = 576.0
+margin_right = 1024.0
+margin_bottom = 640.0
+custom_constants/separation = 0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control/9"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="Background/Control/9"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="Background/Control/9"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="Background/Control/9"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="Background/Control/9"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="Background/Control/9"]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="Background/Control/9"]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="Background/Control/9"]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="Background/Control/9"]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="Background/Control/9"]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="Background/Control/9"]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="Background/Control/9"]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect13" type="TextureRect" parent="Background/Control/9"]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect14" type="TextureRect" parent="Background/Control/9"]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect15" type="TextureRect" parent="Background/Control/9"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect16" type="TextureRect" parent="Background/Control/9"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Background/Control/9"]
+position = Vector2( 476, 72 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 0, 11, 0, 1, 1610612744, 0, 2, 1610612744, 0, 3, 1610612744, 0, 4, 1610612744, 0, 5, 1610612744, 0, 6, 1610612744, 0, 7, 1610612744, 0, 8, 1610612744, 0, 9, 1610612744, 0, 10, 1610612744, 0, 11, 1610612744, 0, 12, 1610612744, 0, 13, 1610612744, 0, 14, 1610612744, 0, 15, 1610612744, 0, 16, 1610612744, 0, 17, 1610612744, 0, 18, 1610612744, 0, 19, 1610612744, 0, 20, 1610612744, 0, 21, 1610612744, 0, 22, 1610612744, 0, 23, 1610612744, 0, 24, 1610612744, 0, 25, 1610612744, 0, 26, 1610612744, 0, 27, 1610612744, 0, 28, 1610612744, 0, 29, 1610612744, 0, 30, 1610612744, 0, 31, 1610612744, 0, 32, 1610612744, 0, 33, 1610612744, 0, 34, 1610612744, 0, 35, 1610612744, 0, 36, 1610612744, 0, 37, 1610612744, 0, 38, 1610612744, 0, 39, 1610612744, 0, 40, 1610612744, 0, 41, 1610612744, 0, 42, 1610612744, 0, 43, 1610612744, 0, 44, 1610612744, 0, 45, 1610612744, 0, 46, 1610612744, 0, 47, 1610612744, 0, 48, 1610612744, 0, 49, 1610612744, 0, 50, 1610612744, 0, 51, 1610612744, 0, 52, 1610612744, 0, 53, 1610612744, 0, 54, 1610612744, 0, 55, 1610612744, 0, 56, 1610612744, 0, 57, 1610612744, 0, 58, 1610612744, 0, 59, 1610612744, 0, 60, 1610612744, 0, 61, 1610612744, 0, 62, 1610612744, 0, 63, -1610612725, 0, 65536, -1610612728, 0, 65599, -1073741816, 0, 131072, -1610612728, 0, 131135, -1073741816, 0, 196608, -1610612728, 0, 196671, -1073741816, 0, 262144, -1610612728, 0, 262207, -1073741816, 0, 327680, -1610612728, 0, 327743, -1073741816, 0, 393216, -1610612728, 0, 393279, -1073741816, 0, 458752, -1610612728, 0, 458815, -1073741816, 0, 524288, -1610612728, 0, 524351, -1073741816, 0, 589824, -1610612728, 0, 589887, -1073741816, 0, 655360, -1610612728, 0, 655423, -1073741816, 0, 720896, -1610612728, 0, 720959, -1073741816, 0, 786432, -1610612728, 0, 786495, -1073741816, 0, 851968, -1610612728, 0, 852031, -1073741816, 0, 917504, -1610612728, 0, 917567, -1073741816, 0, 983040, -1610612728, 0, 983103, -1073741816, 0, 1048576, -1610612728, 0, 1048639, -1073741816, 0, 1114112, -1610612728, 0, 1114175, -1073741816, 0, 1179648, -1610612728, 0, 1179711, -1073741816, 0, 1245184, -1610612728, 0, 1245247, -1073741816, 0, 1310720, -1610612728, 0, 1310783, -1073741816, 0, 1376256, -1610612728, 0, 1376319, -1073741816, 0, 1441792, -1610612728, 0, 1441855, -1073741816, 0, 1507328, -1610612728, 0, 1507391, -1073741816, 0, 1572864, -1610612728, 0, 1572927, -1073741816, 0, 1638400, -1610612728, 0, 1638463, -1073741816, 0, 1703936, -1610612728, 0, 1703999, -1073741816, 0, 1769472, -1610612728, 0, 1769535, -1073741816, 0, 1835008, -1610612728, 0, 1835071, -1073741816, 0, 1900544, -1610612728, 0, 1900607, -1073741816, 0, 1966080, -1610612728, 0, 1966143, -1073741816, 0, 2031616, -1610612728, 0, 2031679, -1073741816, 0, 2097152, -1610612728, 0, 2097215, -1073741816, 0, 2162688, -1610612728, 0, 2162751, -1073741816, 0, 2228224, -1610612728, 0, 2228239, 0, 0, 2228240, 1, 0, 2228241, 1, 0, 2228242, 1, 0, 2228243, 1, 0, 2228244, 1, 0, 2228245, 1, 0, 2228246, 1, 0, 2228247, 1, 0, 2228248, 1, 0, 2228249, 1, 0, 2228250, 1, 0, 2228251, 1, 0, 2228252, 1, 0, 2228253, 1, 0, 2228254, 1, 0, 2228255, 1, 0, 2228256, 2, 0, 2228287, -1073741816, 0, 2293760, -1610612728, 0, 2293775, 15, 0, 2293776, 3, 0, 2293777, 3, 0, 2293778, 3, 0, 2293779, 3, 0, 2293780, 3, 0, 2293781, 3, 0, 2293782, 3, 0, 2293783, 3, 0, 2293784, 3, 0, 2293785, 3, 0, 2293786, 3, 0, 2293787, 3, 0, 2293788, 3, 0, 2293789, 3, 0, 2293790, 3, 0, 2293791, 3, 0, 2293792, 14, 0, 2293823, -1073741816, 0, 2359296, -1610612728, 0, 2359311, 15, 0, 2359312, 3, 0, 2359313, 3, 0, 2359314, 3, 0, 2359315, 3, 0, 2359316, 3, 0, 2359317, 3, 0, 2359318, 3, 0, 2359319, 3, 0, 2359320, 3, 0, 2359321, 3, 0, 2359322, 3, 0, 2359323, 3, 0, 2359324, 3, 0, 2359325, 3, 0, 2359326, 3, 0, 2359327, 3, 0, 2359328, 14, 0, 2359359, -1073741816, 0, 2424832, -1073741813, 0, 2424833, 8, 0, 2424834, 8, 0, 2424835, 8, 0, 2424836, 8, 0, 2424837, 8, 0, 2424838, 8, 0, 2424839, 8, 0, 2424840, 8, 0, 2424841, 8, 0, 2424842, 8, 0, 2424843, 8, 0, 2424844, 8, 0, 2424845, 8, 0, 2424846, 8, 0, 2424847, 8, 0, 2424848, 8, 0, 2424849, 8, 0, 2424850, 8, 0, 2424851, 8, 0, 2424852, 8, 0, 2424853, 8, 0, 2424854, 8, 0, 2424855, 8, 0, 2424856, 8, 0, 2424857, 8, 0, 2424858, 8, 0, 2424859, 8, 0, 2424860, 8, 0, 2424861, 8, 0, 2424862, 8, 0, 2424863, 8, 0, 2424864, 8, 0, 2424865, 8, 0, 2424866, 8, 0, 2424867, 8, 0, 2424868, 8, 0, 2424869, 8, 0, 2424870, 8, 0, 2424871, 8, 0, 2424872, 8, 0, 2424873, 8, 0, 2424874, 8, 0, 2424875, 8, 0, 2424876, 8, 0, 2424877, 8, 0, 2424878, 8, 0, 2424879, 8, 0, 2424880, 8, 0, 2424881, 8, 0, 2424882, 8, 0, 2424883, 8, 0, 2424884, 8, 0, 2424885, 8, 0, 2424886, 8, 0, 2424887, 8, 0, 2424888, 8, 0, 2424889, 8, 0, 2424890, 8, 0, 2424891, 8, 0, 2424892, 8, 0, 2424893, 8, 0, 2424894, 8, 0, 2424895, 1610612747, 0 )
+
+[connection signal="screen_exited" from="Background/Control/0/VisibilityNotifier2D" to="Background/Control/0" method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="Background/Control/10/VisibilityNotifier2D" to="Background/Control/10" method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="Background/Control/1/VisibilityNotifier2D" to="Background/Control/1" method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="Background/Control/2/VisibilityNotifier2D" to="Background/Control/2" method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="Background/Control/3/VisibilityNotifier2D" to="Background/Control/3" method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="Background/Control/4/VisibilityNotifier2D" to="Background/Control/4" method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="Background/Control/5/VisibilityNotifier2D" to="Background/Control/5" method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="Background/Control/6/VisibilityNotifier2D" to="Background/Control/6" method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="Background/Control/7/VisibilityNotifier2D" to="Background/Control/7" method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="Background/Control/8/VisibilityNotifier2D" to="Background/Control/8" method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="screen_exited" from="Background/Control/9/VisibilityNotifier2D" to="Background/Control/9" method="_on_VisibilityNotifier2D_screen_exited"]
