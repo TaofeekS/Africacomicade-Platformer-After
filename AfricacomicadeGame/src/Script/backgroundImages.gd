@@ -16,5 +16,5 @@ func _physics_process(delta):
 
 
 func _on_VisibilityNotifier2D_screen_exited():
-	get_parent().move_child(self,0)
+	get_parent().call_deferred("move_child",self,0)
 	rect_position = Vector2(0,-64)
